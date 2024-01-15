@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D89147D72B555233006BAD0D /* yuLion_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147D62B555233006BAD0D /* yuLion_iOSApp.swift */; };
+		D89147D92B555233006BAD0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147D82B555233006BAD0D /* ContentView.swift */; };
+		D89147DB2B555235006BAD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89147DA2B555235006BAD0D /* Assets.xcassets */; };
+		D89147DE2B555235006BAD0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89147DD2B555235006BAD0D /* Preview Assets.xcassets */; };
+		D89147E82B555235006BAD0D /* yuLion_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147E72B555235006BAD0D /* yuLion_iOSTests.swift */; };
+		D89147F22B555235006BAD0D /* yuLion_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147F12B555235006BAD0D /* yuLion_iOSUITests.swift */; };
+		D89147F42B555235006BAD0D /* yuLion_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147F32B555235006BAD0D /* yuLion_iOSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D89147E42B555235006BAD0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89147CB2B555233006BAD0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89147D22B555233006BAD0D;
+			remoteInfo = "yuLion-iOS";
+		};
+		D89147EE2B555235006BAD0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D89147CB2B555233006BAD0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D89147D22B555233006BAD0D;
+			remoteInfo = "yuLion-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D89147D32B555233006BAD0D /* yuLion-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yuLion-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89147D62B555233006BAD0D /* yuLion_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuLion_iOSApp.swift; sourceTree = "<group>"; };
+		D89147D82B555233006BAD0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D89147DA2B555235006BAD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D89147DD2B555235006BAD0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D89147E32B555235006BAD0D /* yuLion-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yuLion-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89147E72B555235006BAD0D /* yuLion_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuLion_iOSTests.swift; sourceTree = "<group>"; };
+		D89147ED2B555235006BAD0D /* yuLion-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yuLion-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89147F12B555235006BAD0D /* yuLion_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuLion_iOSUITests.swift; sourceTree = "<group>"; };
+		D89147F32B555235006BAD0D /* yuLion_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuLion_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D89147D02B555233006BAD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147E02B555235006BAD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147EA2B555235006BAD0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D89147CA2B555233006BAD0D = {
+			isa = PBXGroup;
+			children = (
+				D89147D52B555233006BAD0D /* yuLion-iOS */,
+				D89147E62B555235006BAD0D /* yuLion-iOSTests */,
+				D89147F02B555235006BAD0D /* yuLion-iOSUITests */,
+				D89147D42B555233006BAD0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D89147D42B555233006BAD0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D89147D32B555233006BAD0D /* yuLion-iOS.app */,
+				D89147E32B555235006BAD0D /* yuLion-iOSTests.xctest */,
+				D89147ED2B555235006BAD0D /* yuLion-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D89147D52B555233006BAD0D /* yuLion-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D89147D62B555233006BAD0D /* yuLion_iOSApp.swift */,
+				D89147D82B555233006BAD0D /* ContentView.swift */,
+				D89147DA2B555235006BAD0D /* Assets.xcassets */,
+				D89147DC2B555235006BAD0D /* Preview Content */,
+			);
+			path = "yuLion-iOS";
+			sourceTree = "<group>";
+		};
+		D89147DC2B555235006BAD0D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D89147DD2B555235006BAD0D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D89147E62B555235006BAD0D /* yuLion-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D89147E72B555235006BAD0D /* yuLion_iOSTests.swift */,
+			);
+			path = "yuLion-iOSTests";
+			sourceTree = "<group>";
+		};
+		D89147F02B555235006BAD0D /* yuLion-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D89147F12B555235006BAD0D /* yuLion_iOSUITests.swift */,
+				D89147F32B555235006BAD0D /* yuLion_iOSUITestsLaunchTests.swift */,
+			);
+			path = "yuLion-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D89147D22B555233006BAD0D /* yuLion-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89147F72B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOS" */;
+			buildPhases = (
+				D89147CF2B555233006BAD0D /* Sources */,
+				D89147D02B555233006BAD0D /* Frameworks */,
+				D89147D12B555233006BAD0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yuLion-iOS";
+			productName = "yuLion-iOS";
+			productReference = D89147D32B555233006BAD0D /* yuLion-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D89147E22B555235006BAD0D /* yuLion-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89147FA2B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOSTests" */;
+			buildPhases = (
+				D89147DF2B555235006BAD0D /* Sources */,
+				D89147E02B555235006BAD0D /* Frameworks */,
+				D89147E12B555235006BAD0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89147E52B555235006BAD0D /* PBXTargetDependency */,
+			);
+			name = "yuLion-iOSTests";
+			productName = "yuLion-iOSTests";
+			productReference = D89147E32B555235006BAD0D /* yuLion-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D89147EC2B555235006BAD0D /* yuLion-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89147FD2B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOSUITests" */;
+			buildPhases = (
+				D89147E92B555235006BAD0D /* Sources */,
+				D89147EA2B555235006BAD0D /* Frameworks */,
+				D89147EB2B555235006BAD0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89147EF2B555235006BAD0D /* PBXTargetDependency */,
+			);
+			name = "yuLion-iOSUITests";
+			productName = "yuLion-iOSUITests";
+			productReference = D89147ED2B555235006BAD0D /* yuLion-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D89147CB2B555233006BAD0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					D89147D22B555233006BAD0D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					D89147E22B555235006BAD0D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D89147D22B555233006BAD0D;
+					};
+					D89147EC2B555235006BAD0D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D89147D22B555233006BAD0D;
+					};
+				};
+			};
+			buildConfigurationList = D89147CE2B555233006BAD0D /* Build configuration list for PBXProject "yuLion-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D89147CA2B555233006BAD0D;
+			productRefGroup = D89147D42B555233006BAD0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D89147D22B555233006BAD0D /* yuLion-iOS */,
+				D89147E22B555235006BAD0D /* yuLion-iOSTests */,
+				D89147EC2B555235006BAD0D /* yuLion-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D89147D12B555233006BAD0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89147DE2B555235006BAD0D /* Preview Assets.xcassets in Resources */,
+				D89147DB2B555235006BAD0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147E12B555235006BAD0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147EB2B555235006BAD0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D89147CF2B555233006BAD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89147D92B555233006BAD0D /* ContentView.swift in Sources */,
+				D89147D72B555233006BAD0D /* yuLion_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147DF2B555235006BAD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89147E82B555235006BAD0D /* yuLion_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89147E92B555235006BAD0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89147F42B555235006BAD0D /* yuLion_iOSUITestsLaunchTests.swift in Sources */,
+				D89147F22B555235006BAD0D /* yuLion_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D89147E52B555235006BAD0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89147D22B555233006BAD0D /* yuLion-iOS */;
+			targetProxy = D89147E42B555235006BAD0D /* PBXContainerItemProxy */;
+		};
+		D89147EF2B555235006BAD0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D89147D22B555233006BAD0D /* yuLion-iOS */;
+			targetProxy = D89147EE2B555235006BAD0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D89147F52B555235006BAD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D89147F62B555235006BAD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D89147F82B555235006BAD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yuLion-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D89147F92B555235006BAD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"yuLion-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D89147FB2B555235006BAD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yuLion-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yuLion-iOS";
+			};
+			name = Debug;
+		};
+		D89147FC2B555235006BAD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yuLion-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/yuLion-iOS";
+			};
+			name = Release;
+		};
+		D89147FE2B555235006BAD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "yuLion-iOS";
+			};
+			name = Debug;
+		};
+		D89147FF2B555235006BAD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W5Z68U98HJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yanni.yuLion-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "yuLion-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D89147CE2B555233006BAD0D /* Build configuration list for PBXProject "yuLion-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89147F52B555235006BAD0D /* Debug */,
+				D89147F62B555235006BAD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89147F72B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89147F82B555235006BAD0D /* Debug */,
+				D89147F92B555235006BAD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89147FA2B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89147FB2B555235006BAD0D /* Debug */,
+				D89147FC2B555235006BAD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89147FD2B555235006BAD0D /* Build configuration list for PBXNativeTarget "yuLion-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89147FE2B555235006BAD0D /* Debug */,
+				D89147FF2B555235006BAD0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D89147CB2B555233006BAD0D /* Project object */;
+}
