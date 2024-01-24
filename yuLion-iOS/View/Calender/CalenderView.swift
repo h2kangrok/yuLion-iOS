@@ -16,12 +16,7 @@ struct CalenderView: View {
         
         VStack{
             
-         
-            
-            
-            
-            
-            
+            let days: [String] = ["월","화","수","목","금","토","일"]
             
             // 날짜 선택하는 view
             HStack{
@@ -49,6 +44,15 @@ struct CalenderView: View {
                 }
             }
             .padding()
+            
+            HStack (spacing: 0){
+                ForEach(days,id: \.self) {day in
+                    Text(day)
+                        .font(.callout)
+                        .fontWeight(.semibold)  
+                        .frame(maxWidth: .infinity)
+                }
+            }
         }
     }
 }
