@@ -10,6 +10,7 @@
 		A00D0D022B615C230034AE08 /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D0D012B615C230034AE08 /* CalenderView.swift */; };
 		A00D0D042B6165AA0034AE08 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00D0D032B6165AA0034AE08 /* Home.swift */; };
 		A0F1482C2B628649006F6953 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1482B2B628649006F6953 /* DateValue.swift */; };
+		D81F2E722B626F05007F1BAE /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F2E712B626F04007F1BAE /* WelcomeView.swift */; };
 		D89147D72B555233006BAD0D /* yuLion_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147D62B555233006BAD0D /* yuLion_iOSApp.swift */; };
 		D89147D92B555233006BAD0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89147D82B555233006BAD0D /* ContentView.swift */; };
 		D89147DB2B555235006BAD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89147DA2B555235006BAD0D /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		A00D0D012B615C230034AE08 /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		A00D0D032B6165AA0034AE08 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A0F1482B2B628649006F6953 /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		D81F2E712B626F04007F1BAE /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D89147D32B555233006BAD0D /* yuLion-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yuLion-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89147D62B555233006BAD0D /* yuLion_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yuLion_iOSApp.swift; sourceTree = "<group>"; };
 		D89147D82B555233006BAD0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		A00D0CFF2B615B810034AE08 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D81F2E702B626EEA007F1BAE /* Welcome */,
 				A00D0D002B615BAD0034AE08 /* Calender */,
 			);
 			path = View;
@@ -100,6 +103,12 @@
 				A0F1482B2B628649006F6953 /* DateValue.swift */,
 			);
 			path = Model;
+		D81F2E702B626EEA007F1BAE /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D81F2E712B626F04007F1BAE /* WelcomeView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		D89147CA2B555233006BAD0D = {
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89147D92B555233006BAD0D /* ContentView.swift in Sources */,
+				D81F2E722B626F05007F1BAE /* WelcomeView.swift in Sources */,
 				D89147D72B555233006BAD0D /* yuLion_iOSApp.swift in Sources */,
 				A00D0D042B6165AA0034AE08 /* Home.swift in Sources */,
 				A00D0D022B615C230034AE08 /* CalenderView.swift in Sources */,
