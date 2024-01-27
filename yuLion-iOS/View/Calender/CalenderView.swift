@@ -16,65 +16,78 @@ struct CalenderView: View {
     
     var body: some View {
         
-        
-        VStack{
-            
-            let days: [String] = ["일","월","화","수","목","금","토"]
-            
-            // 날짜 선택하는 view
-            HStack{
+        VStack {
+            ZStack (alignment: .top){
                 
-                HStack {
-                    Text(extraDate()[0])
-                        .font(.title.bold())
-                    Text(extraDate()[1])
-                        .font(.title.bold())
-                }
-                Spacer(minLength: 0)
+                RoundedRectangle(cornerRadius: 20)
+                    .fill(Color.gray)
+                    .frame(width: 390, height: 580)
                 
-                Button {
-                    withAnimation {
-                        currentMonth -= 1
-                    }
-                } label: {
-                    Image(systemName: "chevron.left")
-                        .font(.title2)
-                }
-                
-                Button {
-                    withAnimation {
-                        currentMonth += 1
-                    }
-                } label: {
-                    Image(systemName: "chevron.right")
-                        .font(.title2)
-                }
-            }
-            .padding()
-            
-            HStack (spacing: 0){
-                ForEach(days,id: \.self) {day in
-                    Text(day)
-                        .font(.callout)
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity)
-                }
-                
-            }
-            let columns = Array(repeating: GridItem(.flexible()), count: 7)
-            
-            LazyVGrid(columns: columns, spacing:  15) {
-                ForEach(extractDate()) { value in
+                VStack {
                     
-                    CardView(value: value)
+                    let days: [String] = ["일","월","화","수","목","금","토"]
+                    
+                    // 날짜 선택하는 view
+                    HStack{
+                        
+                        HStack {
+                            Text(extraDate()[0])
+                                .font(.title.bold())
+                            Text(extraDate()[1])
+                                .font(.title.bold())
+                        }
+                        Spacer(minLength: 0)
+                        
+                        Button {
+                            withAnimation {
+                                currentMonth -= 1
+                            }
+                        } label: {
+                            Image(systemName: "chevron.left")
+                                .font(.title2)
+                                .foregroundColor(.black)
+                        }
+                        
+                        Button {
+                            withAnimation {
+                                currentMonth += 1
+                            }
+                        } label: {
+                            Image(systemName: "chevron.right")
+                                .font(.title2)
+                                .foregroundColor(.black)
+                        }
+                    }
+                    .padding()
+                    
+                    HStack (spacing: 0){
+                        ForEach(days,id: \.self) {day in
+                            Text(day)
+                                .font(.callout)
+                                .fontWeight(.semibold)
+                                .frame(maxWidth: .infinity)
+                        }
+                        
+                    }
+                    let columns = Array(repeating: GridItem(.flexible()), count: 7)
+                    
+                    LazyVGrid(columns: columns, spacing:  15) {
+                        ForEach(extractDate()) { value in
+                            
+                            CardView(value: value)
+                        }
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .padding()
+            .onChange(of: currentMonth) { newValue in
+                
+                // Month 업데이트
+                currentDate = getCurrentMonth()
+            }
         }
-        .onChange(of: currentMonth) { newValue in
-            
-            // Month 업데이트
-            currentDate = getCurrentMonth()
-        }
+        
     }
     
     @ViewBuilder
@@ -85,10 +98,25 @@ struct CalenderView: View {
             if value.day != -1 {
                 Text("\(value.day)")
                     .font(.title3.bold())
+                    .foregroundColor(getTextColor(for: value.date))
             }
         }
         .padding(.vertical,8)
-        .frame(height: 100, alignment: .top)
+        .frame(height: 60, alignment: .top)
+    }
+    
+    func getTextColor(for date: Date) -> Color {
+        let calendar = Calendar.current
+        let weekday = calendar.component(.weekday, from: date)
+        
+        switch weekday {
+        case 1: // Sunday
+            return .red
+        case 7: // Saturday
+            return .blue
+        default:
+            return .black
+        }
     }
     
     // 표시를 위해 연도 및 월 추가
@@ -148,7 +176,7 @@ struct CalenderView: View {
     //    CalenderView()
     ContentView()
 }
- 
+
 extension Date {
     
     func getAllDates() -> [Date] {
